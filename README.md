@@ -48,6 +48,13 @@ Windows: baixe em [nmap.org/download.html](https://nmap.org/download.html)
 sudo ./scanthera
 ```
 
+> **macOS — aviso de segurança:** Na primeira execução o macOS pode bloquear o app por não ter assinatura Apple. Para liberar, execute no terminal:
+> ```bash
+> sudo xattr -rd com.apple.quarantine ./scanthera-macos
+> sudo ./scanthera-macos
+> ```
+> Ou clique com o botão direito no arquivo → segure **Option (⌥)** → clique **"Abrir"** → **"Abrir"**.
+
 ### Windows
 
 Extraia o `.zip`, clique com o botão direito em `scanthera-windows.exe` → **Executar como administrador**.
