@@ -2,13 +2,84 @@
   <img src="logo.png" alt="SCANTHERA" width="180"/>
 </p>
 
-# SCANTHERA
+# SCANTHERA — Network Security Scanner
 
-**Scanner de segurança de rede local com dashboard web.**
+> Plataforma de segurança de rede com dashboard web moderno, captura de pacotes em tempo real, scanner WiFi, análise de vulnerabilidades e exportação de relatórios.
 
-Identifica todos os dispositivos da sua rede, analisa portas abertas, detecta vulnerabilidades conhecidas (CVEs), mapeia a topologia e monitora tráfego em tempo real — tudo em uma interface visual acessível pelo navegador.
+Criado por **[Euler Azevedo](https://github.com/eulerazevedo)** · versão **1.1**
 
 ![Dashboard](preview.png)
+
+---
+
+## Visão Geral
+
+O SCANTHERA é uma ferramenta completa de auditoria de redes locais. Descobre dispositivos, escaneia portas, identifica sistemas operacionais, cruza serviços com vulnerabilidades conhecidas (CVEs via NVD/NIST), analisa redes WiFi, captura e inspeciona tráfego de rede em tempo real — tudo em uma interface web escura e moderna.
+
+### Frameworks de segurança cobertos
+
+| Framework | Cobertura |
+|---|---|
+| **NIST SP 800-115** | Technical Guide to Network Security Testing |
+| **NIST CSF** | Cybersecurity Framework — Identify & Protect |
+| **CIS Controls v8** | Controls 1, 2, 4, 7, 12 |
+| **OWASP** | Network Security Testing Guide |
+| **ISO 27001** | A.12.6 — Vulnerability Management |
+| **CVE / NVD** | NIST National Vulnerability Database |
+
+---
+
+## Funcionalidades
+
+### Descoberta de Rede
+- ARP scan + ping sweep para detectar todos os dispositivos ativos
+- Identificação de IP, MAC address, hostname e fabricante
+- Classificação automática do tipo de dispositivo (router, server, workstation, IoT, câmera, etc.)
+
+### Port Scanning
+
+| Modo | Portas | Tempo estimado |
+|---|---|---|
+| Rápido | Top 100 | ~2 min |
+| Padrão | Top 1000 | ~5–10 min |
+| Completo | Todas as 65535 | ~30+ min |
+
+### OS Fingerprinting
+- Detecta sistema operacional e versão (requer root/sudo)
+
+### Vulnerabilidades (CVEs)
+- Consulta automática à API do NVD (NIST) para cada serviço detectado
+- Exibe CVE ID, descrição, CVSS score e severidade (critical / high / medium / low)
+
+### Análise de Rede
+- Detecção de protocolos inseguros: Telnet, FTP, HTTP administrativo
+- Bancos de dados expostos na rede (MySQL, PostgreSQL, MongoDB, Redis)
+- Serviços de acesso remoto expostos (RDP, VNC, SMB)
+
+### Score de Risco
+- Score de 0 a 100 com gauge visual
+- Classificações: **SEGURO** / **ATENÇÃO** / **ALTO RISCO** / **CRÍTICO**
+
+### Scanner WiFi
+- Detecta todas as redes WiFi próximas com SSID, BSSID, canal, sinal e criptografia
+- Avaliação automática do nível de segurança de cada rede (WPA3 / WPA2 / WEP / Aberta)
+- Estimativa de tempo de quebra de senha por wordlist e força bruta
+
+### Topologia de Rede
+- Detecção de gateway, MAC do roteador e fabricante
+- Identificação de firewall e técnicas de filtragem ativas
+- Traceroute visual com hops e diagnóstico da infraestrutura
+
+### Captura de Pacotes em Tempo Real
+- Captura de tráfego ao vivo com streaming por WebSocket
+- Filtros: Tudo, Sem Criptografia, HTTP, DNS, ARP, ICMP, TCP, UDP
+- Detecção automática de conexões sem criptografia: HTTP, FTP, Telnet, SMTP e outros
+- Inspeção de pacotes com payload, headers sensíveis e hex dump
+- Exportação CSV do buffer capturado
+
+### Relatórios
+- Cada varredura gera um dashboard individual com nome customizável
+- Exportação de relatório em `.html` e `.json`
 
 ---
 
@@ -67,24 +138,16 @@ Extraia o `.zip`, clique com o botão direito em `scanthera-windows.exe` → **E
 
 ---
 
-## Funcionalidades
-
-- **Descoberta de rede** — detecta dispositivos via ARP + ping
-- **Scan de portas** — identifica serviços ativos e portas perigosas expostas
-- **Detecção de OS** — fingerprinting do sistema operacional de cada dispositivo
-- **CVEs** — consulta automática na base NVD para vulnerabilidades conhecidas
-- **Topologia** — mapa visual da rede com relações entre dispositivos
-- **Captura de pacotes** — monitoramento de tráfego em tempo real com alerta para tráfego sem criptografia
-- **WiFi** — análise de redes sem fio disponíveis e segurança
-- **Relatórios** — exportação em PDF e HTML
-- **Score de risco** — pontuação automática de risco por dispositivo
-
----
-
 ## Após executar
 
 O dashboard abre automaticamente no navegador em `http://localhost:7777`.
 
 ---
 
-Desenvolvido por [Euler Azevedo](https://github.com/eulerazevedo)
+## Aviso Legal
+
+Esta ferramenta é destinada exclusivamente ao uso em redes das quais você tem autorização explícita para realizar testes de segurança. O uso em redes de terceiros sem autorização é ilegal e antiético. O autor não se responsabiliza pelo uso indevido desta ferramenta.
+
+---
+
+*SCANTHERA v1.1 — criado por [Euler Azevedo](https://github.com/eulerazevedo)*
