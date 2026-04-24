@@ -144,6 +144,14 @@ O dashboard abre automaticamente no navegador em `http://localhost:7777`.
 
 ---
 
+## Dados e histórico
+
+O SCANTHERA cria um arquivo `scanthera.db` na mesma pasta do executável na primeira execução. Todos os scans, dispositivos e vulnerabilidades ficam salvos nesse arquivo e persistem entre execuções.
+
+Para **resetar o histórico**, basta apagar o arquivo `scanthera.db`.
+
+---
+
 ## Aviso Legal
 
 Esta ferramenta é destinada exclusivamente ao uso em redes das quais você tem autorização explícita para realizar testes de segurança. O uso em redes de terceiros sem autorização é ilegal e antiético. O autor não se responsabiliza pelo uso indevido desta ferramenta.
