@@ -1,10 +1,14 @@
+<p align="center">
+  <img src="logo.png" alt="SCANTHERA" width="180"/>
+</p>
+
 # SCANTHERA
 
 **Scanner de segurança de rede local com dashboard web.**
 
 Identifica todos os dispositivos da sua rede, analisa portas abertas, detecta vulnerabilidades conhecidas (CVEs), mapeia a topologia e monitora tráfego em tempo real — tudo em uma interface visual acessível pelo navegador.
 
-![Dashboard](https://raw.githubusercontent.com/eulerazevedo/scanthera/main/preview.png)
+![Dashboard](preview.png)
 
 ---
 
