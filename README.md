@@ -148,6 +148,8 @@ Extraia o `.zip`, clique com o botão direito em `scanthera-windows.exe` → **E
 
 O dashboard abre automaticamente no navegador em `http://localhost:7777`.
 
+Para encerrar o app, volte ao terminal e pressione **Ctrl+C**.
+
 ---
 
 ## Dados e histórico
