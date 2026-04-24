@@ -2,11 +2,13 @@
   <img src="logo.png" alt="SCANTHERA" width="180"/>
 </p>
 
-# SCANTHERA — Network Security Scanner
+# SCANTHERA — Network Security Scanner ⚠️
 
 > Plataforma de segurança de rede com dashboard web moderno, captura de pacotes em tempo real, scanner WiFi, análise de vulnerabilidades e exportação de relatórios.
 
 Criado por **[Euler Azevedo](https://github.com/eulerazevedo)** · versão **1.1**
+
+> **⚠️ Aviso Legal:** Esta ferramenta é destinada exclusivamente ao uso em redes das quais você tem autorização explícita para realizar testes de segurança. O uso em redes de terceiros sem autorização é ilegal e antiético. O autor não se responsabiliza pelo uso indevido desta ferramenta.
 
 ![Dashboard](preview.png)
 
@@ -151,12 +153,6 @@ O dashboard abre automaticamente no navegador em `http://localhost:7777`.
 O SCANTHERA cria um arquivo `scanthera.db` na mesma pasta do executável na primeira execução. Todos os scans, dispositivos e vulnerabilidades ficam salvos nesse arquivo e persistem entre execuções.
 
 Para **resetar o histórico**, basta apagar o arquivo `scanthera.db`.
-
----
-
-## Aviso Legal
-
-Esta ferramenta é destinada exclusivamente ao uso em redes das quais você tem autorização explícita para realizar testes de segurança. O uso em redes de terceiros sem autorização é ilegal e antiético. O autor não se responsabiliza pelo uso indevido desta ferramenta.
 
 ---
 
