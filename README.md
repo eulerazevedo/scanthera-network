@@ -11,15 +11,15 @@ Criado por **[Euler Azevedo](https://github.com/eulerazevedo)** · versão **1.1
 ![Dashboard](preview.png)
 
 <p align="center">
-  <a href="https://github.com/eulerazevedo/scanthera-releases/releases/latest/download/scanthera-macos.zip">
+  <a href="https://github.com/eulerazevedo/scanthera-network/releases/latest/download/scanthera-macos.zip">
     <img src="https://img.shields.io/badge/macOS-Download-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Download macOS" />
   </a>
   <br/>
-  <a href="https://github.com/eulerazevedo/scanthera-releases/releases/latest/download/scanthera-linux.tar.gz">
+  <a href="https://github.com/eulerazevedo/scanthera-network/releases/latest/download/scanthera-linux.tar.gz">
     <img src="https://img.shields.io/badge/Linux-Download-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Download Linux" />
   </a>
   <br/>
-  <a href="https://github.com/eulerazevedo/scanthera-releases/releases/latest/download/scanthera-windows.exe.zip">
+  <a href="https://github.com/eulerazevedo/scanthera-network/releases/latest/download/scanthera-windows.exe.zip">
     <img src="https://img.shields.io/badge/Windows-Download-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Download Windows" />
   </a>
 </p>
