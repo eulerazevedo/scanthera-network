@@ -26,6 +26,8 @@ Criado por **[Euler Azevedo](https://github.com/eulerazevedo)** · versão **1.1
   </a>
 </p>
 
+> **💡 Dica:** Se o navegador abrir e a página não carregar, aguarde 10 segundos e tente novamente — os serviços podem ainda estar subindo.
+
 ---
 
 ## Visão Geral
